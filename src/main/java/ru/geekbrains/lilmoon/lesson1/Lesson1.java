@@ -16,9 +16,10 @@ public class Lesson1 {
         System.out.println(task3(2.3f,5.1f,6.9f,1.6f));//задание 3
         System.out.println(task4(14,6));//задание 4
         task5(119);//задание 5
-        System.out.println(task6(-124));//задание 6
+        System.out.println(task6(-2));//задание 6
         tasks7("Айнур");//задание 7
         task8(2021);//задание 8
+        System.out.println("Good bye");
     }
     static float task3(float a,float b,float c,float d) {
         return a*(b+(c/d));
@@ -36,11 +37,7 @@ public class Lesson1 {
 
     }
     static boolean task6(int a){
-        if(a<0)
-            return true;
-
-        else
-            return false;
+        return a < 0;
     }
     static void tasks7(String name){
         System.out.println("Привет, "+name+"!");
