@@ -1,15 +1,15 @@
 package ru.geekbrains.lilmoon.lessons.lesson2;
 
-import com.sun.security.jgss.GSSUtil;
-
 import java.util.Arrays;
-import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Homeworklesson2hardmode {
     public static void main(String[] args) {
 //        guessTheWord();
+        int [] arr={2,1,5,1,2,5};
+//        checkBalance(arr);
+        arrayMove(arr);
         }
     static Scanner scanner = new Scanner(System.in);
     static Random random = new Random();
@@ -49,6 +49,20 @@ public class Homeworklesson2hardmode {
             if(half==sum) return true;
         }
         return false;
+    }
+    static void arrayMove(int [] arr){
+        System.out.println("На сколько надо сдвинуть массив?");
+        int n=scanner.nextInt();
+        if( n>0){
+            for (int j = 0; j <=n; j++) {
+
+            int temp=arr[arr.length-1];
+            for (int i = 0; i < arr.length; i++) {
+            arr[arr.length-1-i]=arr[arr.length-2-i];
+                }
+            arr[0]=temp;
+            }
+        }
     }
 }
 
