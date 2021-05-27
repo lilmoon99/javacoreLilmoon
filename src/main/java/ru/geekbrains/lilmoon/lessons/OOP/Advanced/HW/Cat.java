@@ -1,9 +1,14 @@
 package ru.geekbrains.lilmoon.lessons.OOP.Advanced.HW;
 
 public class Cat extends Animals {
+        public static int counterCat=0;
         public Cat(String name){
             super("Cat");
             this.name = name;
+            counter();
+        }
+        public void counter(){
+            counterCat++;
         }
         int runLimit = 200;
         public void run(int length){

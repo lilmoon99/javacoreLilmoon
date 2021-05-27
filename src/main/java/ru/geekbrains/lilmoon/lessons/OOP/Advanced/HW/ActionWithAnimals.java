@@ -25,15 +25,17 @@ public class ActionWithAnimals {
             animal.swim(5);
             System.out.println();
         }
-        for (Animals animal: animals) {
-            if(animal instanceof Cat){
-                catCounter++;
-            }
-            else if(animal instanceof Dog){
-                dogCounter++;
-            }
-        }
-        animalCounter=catCounter+dogCounter;
-        System.out.printf("Number of cats: %d.\nNumber of dogs: %d.\nNumber of all animals:%d.",catCounter,dogCounter,animalCounter);
+//        for (Animals animal: animals) {
+//            if(animal instanceof Cat){
+//                catCounter++;
+//            }
+//            else if(animal instanceof Dog){
+//                dogCounter++;
+//            }
+//        }
+        System.out.println("Cats"+ Cat.counterCat);
+        System.out.println("Dogs"+ Dog.counterDog);
+       // animalCounter=catCounter+dogCounter;
+        //System.out.printf("Number of cats: %d.\nNumber of dogs: %d.\nNumber of all animals:%d.",catCounter,dogCounter,animalCounter);
     }
 }

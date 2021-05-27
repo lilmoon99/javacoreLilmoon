@@ -1,12 +1,17 @@
 package ru.geekbrains.lilmoon.lessons.OOP.Advanced.HW;
 
 public class Dog extends Animals{
+    public static int counterDog=0;
     public Dog(String name){
         super("Dog");
         this.name = name;
+        counterDog();
     }
     int runLimit = 500;
     int swimLimit = 10;
+    public void counterDog(){
+        counterDog++;
+    }
     public void run(int length){
         if(length>runLimit){
             System.out.printf("%s %s ran for %d metres and fell down to ground.\n",TYPE,this.name,length);
