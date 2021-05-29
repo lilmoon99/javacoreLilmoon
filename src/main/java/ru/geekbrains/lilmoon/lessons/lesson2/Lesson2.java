@@ -1,4 +1,4 @@
-package ru.geekbrains.lilmoon.lessons;
+package ru.geekbrains.lilmoon.lessons.lesson2;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -68,8 +68,8 @@ public class Lesson2 {
         invertArray();//задание 1
         fillArray();//задание 2
         changeArray();//задание 3
-        fillDiagonal();
-        maxMin();
+        fillDiagonal();//задание 4
+        maxMin();//задание 5
     }
 
 

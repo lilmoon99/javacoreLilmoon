@@ -1,4 +1,4 @@
-package ru.geekbrains.lilmoon.lesson1;//задание 1
+package ru.geekbrains.lilmoon.lessons.lesson1;//задание 1
 
 public class Lesson1 {
     public static void main(String[] args) {
@@ -43,7 +43,7 @@ public class Lesson1 {
         System.out.println("Привет, "+name+"!");
     }
     static void task8(int year){
-        if(year % 4 == 0||year%400==0){
+        if(year % 4 == 0 && year%100!=0 || year%400==0){
             System.out.println(year+" високосный год");
         }
         else{
